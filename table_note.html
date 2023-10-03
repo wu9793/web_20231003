@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table_note</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px black solid;
+            border-collapse: collapse;
+            /* background-color: aquamarine; */
+            /* text-align: center; */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            vertical-align: text-top;
+            line-height: 200%;
+        }
+
+        .h-10 {
+            height: 10vh;
+        }
+
+        .h-20 {
+            height: 20vh;
+        }
+
+        .h-50 {
+            height: 50vh;
+        }
+
+        .h-70 {
+            height: 70vh;
+        }
+
+        .h-90 {
+            height: 90vh;
+        }
+
+
+        .w-25 {
+            width: 25%;
+        }
+
+        .w-30 {
+            width: 30vh;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>康乃爾筆記</h3>
+        <table>
+            <tr>
+                <td class="h-70 w-30">
+                    <h4 class="text-red">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates, aliquam nam ipsum et
+                        hic odio eveniet. Corrupti provident magnam ad autem dolorum. Nisi veniam modi laboriosam dolor
+                        earum quas?</p>
+                </td>
+                <td class="h-70">
+                    <h4 class="text-red">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates, aliquam nam ipsum et
+                        hic odio eveniet. Corrupti provident magnam ad autem dolorum. Nisi veniam modi laboriosam dolor
+                        earum quas?</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="h-20">
+                    <h4 class="text-red">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates, aliquam nam ipsum et
+                        hic odio eveniet. Corrupti provident magnam ad autem dolorum. Nisi veniam modi laboriosam dolor
+                        earum quas?</p>
+                </td>
+                <!-- <td>444</td> -->
+            </tr>
+        </table>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <h3>東大筆記</h3>
+        <table>
+            <tr>
+                <td class="w-50 h-90">
+                    <h4 class="text-red">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates, aliquam nam ipsum et
+                        hic odio eveniet. Corrupti provident magnam ad autem dolorum. Nisi veniam modi laboriosam dolor
+                        earum quas?</p>
+                </td>
+                <td class="w-25">
+                    <h4 class="text-red">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates, aliquam nam ipsum et
+                        hic odio eveniet. Corrupti provident magnam ad autem dolorum. Nisi veniam modi laboriosam dolor
+                        earum quas?</p>
+                </td>
+                <td>
+                    <h4 class="text-red">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates, aliquam nam ipsum et
+                        hic odio eveniet. Corrupti provident magnam ad autem dolorum. Nisi veniam modi laboriosam dolor
+                        earum quas?</p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <h3>麥肯錫筆記</h3>
+        <table>
+            <tr>
+                <td colspan="3" class="h-10">1</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="h-50">4</td>
+                <td class="h-50">5</td>
+                <td class="h-50">6</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <h3>獲利時代</h3>
+        <table>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <!-- <td>6</td> -->
+                <td>7</td>
+                <!-- <td>8</td> -->
+                <td>9</td>
+                <!-- <td>10</td> -->
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>22</td>
+                <td>33</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
