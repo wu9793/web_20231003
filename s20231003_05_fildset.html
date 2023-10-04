@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HR 表單</title>
     <style>
         .text-red {
             color: red;
         }
-        .text-alien{
+
+        .text-alien {
             text-align: center;
         }
-        .bg-skyblue{
-            color: skyblue;
+
+        legend {
+            text-align: center;
+            font-size: 24px;
         }
+
+        .container {
+            max-width: 750px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
-        <fieldset>
+        <fieldset class="bg-skyblue text-red">
             <legend class="text-alien">hr報表</legend>
             <p>
                 <label for="name">姓名&nbsp;</label>
@@ -28,17 +40,24 @@
                 <input type="submit" value="送出">
                 <input type="submit" value="清除">
             </p>
+
             <p>
                 <label for="Mobile">電話&nbsp;</label>
                 <input type="text" id="Mobile">
                 <input type="submit" value="送出">
                 <input type="submit" value="清除">
             </p>
-            <p>
-                <h4>地址</h4>
-                <textarea name="myTextarea" id="" cols="50" rows="2"></textarea>
 
+            <p>
+                生日&nbsp;&nbsp;<input type="date" value="2023-01-01">
             </p>
+
+
+            <p>
+            <h4>地址</h4>
+            <textarea name="myTextarea" id="" cols="50" rows="2"></textarea>
+            </p>
+
             <p>
             <h4>性別</h4>
             <select name="" id="性別">
@@ -46,8 +65,8 @@
                 <option value="s1">男性</option>
                 <option value="s2">女性</option>
             </select>
-
             </p>
+
             <p>
             <h4>年齡</h4>
             <div class="container">
@@ -59,6 +78,7 @@
                 <label for="item3">30歲以上</label>
             </div>
             </p>
+
             <p>
             <h4>通勤工具</h4>
             <input type="checkbox" name="mycheckbox[]" value="check1">
@@ -68,17 +88,17 @@
             <input type="checkbox" name="mycheckbox[]" value="check3">
             <label for="">搭捷運</label>
             </p>
+
             <p>
-                <h4>自傳</h4>
-                <textarea name="myTextarea" id="" cols="30" rows="10"></textarea>
+            <h4>自傳</h4>
+            <textarea name="myTextarea" id="" cols="60" rows="10"></textarea>
             </p>
+
             <p>
-            <div class="container">
                 <input type="reset" value="清除資料">
                 <input type="submit" value="資料送出">
-            </div>
             </p>
-            
+
         </fieldset>
     </div>
 </body>
